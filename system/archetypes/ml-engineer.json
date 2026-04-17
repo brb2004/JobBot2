@@ -1,0 +1,8 @@
+{
+  "id": "ml-engineer",
+  "labels": ["Machine Learning Engineer", "MLE", "AI Engineer"],
+  "summary_framing": "Highlight the end-to-end ML lifecycle from data curation and model training to evaluation and deployment. Focus on model performance and real-world impact.",
+  "prioritized_skills": ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "HuggingFace", "MLOps", "Feature Engineering"],
+  "bullet_emphasis": ["accuracy", "precision", "recall", "trained", "optimized", "fine-tuned", "inference", "A/B testing", "deployment"],
+  "de_emphasize": ["pure software architecture", "frontend development", "database administration"]
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume Optimizer | Precision-Tech Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#111c2d",
+                    "outline": "#76777d",
+                    "on-primary-fixed": "#111c2d",
+                    "primary-fixed-dim": "#bcc7de",
+                    "primary": "#000000",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "surface-dim": "#d8dadc",
+                    "on-tertiary-fixed-variant": "#005049",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary-fixed-dim": "#6bd8cb",
+                    "secondary": "#515f74",
+                    "on-primary-container": "#79849a",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#d5e3fd",
+                    "inverse-on-surface": "#eff1f3",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-background": "#191c1e",
+                    "secondary-container": "#d5e3fd",
+                    "tertiary-container": "#00201d",
+                    "surface-tint": "#545f73",
+                    "on-secondary-container": "#57657b",
+                    "inverse-surface": "#2d3133",
+                    "tertiary": "#000000",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c6c6cd",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#45464d",
+                    "on-tertiary-container": "#0c9488",
+                    "inverse-primary": "#bcc7de",
+                    "on-surface": "#191c1e",
+                    "primary-fixed": "#d8e3fb",
+                    "on-primary-fixed-variant": "#3c475a",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "tertiary-fixed": "#89f5e7",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "surface": "#f7f9fb",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#00201d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm shadow-slate-200/50">
+<div class="flex justify-between items-center h-16 px-6 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-slate-900 font-headline">Precision-Tech Editorial</span>
+<nav class="hidden md:flex gap-6">
+<a class="font-headline text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Discover</a>
+<a class="font-headline text-sm font-semibold tracking-tight text-slate-900 border-b-2 border-teal-500 pb-1" href="#">Optimization</a>
+<a class="font-headline text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Upskilling</a>
+<a class="font-headline text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Applications</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-slate-100/50 rounded-full transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-slate-100/50 rounded-full transition-all">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="h-8 w-8 rounded-full overflow-hidden bg-surface-container-high border-outline-variant/20 border">
+<img alt="User profile avatar" data-alt="professional portrait of a tech executive with neutral background and soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_z72-e8kzGLpXFdjOUGooPH9Opc5SrbUEoqtptstyVt01rRYk0NCujx_Rxnz7B7z4lyziI956zF_Jcy0mXOlMsf4eyGD4OT9kgB4m5v-0hSLvZqCHgL0eLIQeFCIrpQNyN2DNlMt6WnzqRSlyxW7hyJY-WGtXzIWyflcldzHTrTga_I352XnRpChpO7xvSAUkqBiNOe-41bvoXR3xXgqK6UZFjA42v1ZnmgbsoxRLr44m0nZ5xzpRmZvaTlvtrbtd---2pQxH2vc"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Side Navigation (Mobile Hidden) -->
+<aside class="hidden lg:flex flex-col gap-2 p-4 h-screen w-64 fixed left-0 top-0 pt-20 bg-surface-container-low">
+<div class="mb-6 px-3 flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-sm leading-none">AI Engine</h3>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Match Score Optimized</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 p-3 text-slate-600 hover:bg-slate-200 transition-all rounded-lg font-medium text-xs font-headline" href="#">
+<span class="material-symbols-outlined">folder_supervised</span> Job Curation
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 hover:bg-slate-200 transition-all rounded-lg font-medium text-xs font-headline" href="#">
+<span class="material-symbols-outlined">distance</span> Map Search
+            </a>
+<a class="flex items-center gap-3 p-3 bg-teal-50 text-teal-700 rounded-lg font-bold text-xs font-headline" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span> ATS Check
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 hover:bg-slate-200 transition-all rounded-lg font-medium text-xs font-headline" href="#">
+<span class="material-symbols-outlined">school</span> My Projects
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 hover:bg-slate-200 transition-all rounded-lg font-medium text-xs font-headline" href="#">
+<span class="material-symbols-outlined">send</span> Workflows
+            </a>
+</nav>
+<div class="mt-auto p-4 bg-primary-container rounded-xl text-white">
+<p class="text-[10px] text-on-primary-container font-semibold uppercase tracking-wider mb-2">Resume Strength</p>
+<div class="flex items-end justify-between mb-2">
+<span class="text-2xl font-headline font-extrabold">84%</span>
+<span class="text-[10px] text-tertiary-fixed">+12% this week</span>
+</div>
+<div class="w-full bg-slate-700 h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed h-full" style="width: 84%"></div>
+</div>
+<button class="w-full mt-4 bg-white text-primary-container text-xs font-bold py-2 rounded-lg hover:bg-slate-100 transition-colors">Upload Resume</button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:pl-64 pt-24 pb-12 px-8 min-h-screen">
+<div class="max-w-7xl mx-auto">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h1 class="text-4xl font-headline font-extrabold tracking-tighter text-on-surface">ATS Optimization Hub</h1>
+<p class="text-on-surface-variant mt-2 max-w-lg">We've cross-referenced your profile against 450+ Tier 1 engineering roles. Apply the suggested edits below to bridge the semantic gap.</p>
+</div>
+<div class="flex gap-3">
+<button class="px-5 py-2.5 bg-surface-container-high text-on-surface font-headline text-sm font-semibold rounded-xl hover:bg-surface-container-highest transition-colors">Download PDF</button>
+<button class="px-5 py-2.5 bg-primary text-on-primary font-headline text-sm font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-primary/10">Commit All Edits</button>
+</div>
+</div>
+<!-- Dashboard Layout: Asymmetric Bento Grid -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Left Column: Resume Editor (8/12) -->
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-6">
+<section class="bg-surface-container-lowest rounded-2xl p-8 shadow-sm ring-1 ring-outline-variant/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-tertiary-container/10 text-on-tertiary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span> Live Editorial Mode
+                            </span>
+</div>
+<!-- Resume Content Mock -->
+<div class="max-w-2xl mx-auto font-body text-slate-800 space-y-8">
+<header class="text-center">
+<h2 class="text-2xl font-headline font-bold text-slate-900">ALEXANDER VANCE</h2>
+<p class="text-sm text-slate-500 mt-1">Senior Systems Architect | San Francisco, CA</p>
+</header>
+<div class="space-y-4">
+<div class="flex items-center justify-between border-b border-slate-100 pb-2">
+<h3 class="font-headline font-extrabold text-sm tracking-widest text-slate-400 uppercase">Professional Summary</h3>
+<span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">Needs Detail</span>
+</div>
+<p class="text-sm leading-relaxed relative p-3 bg-teal-50/30 rounded-lg border-l-4 border-teal-500">
+                                    Results-driven <span class="bg-teal-100 text-teal-900 font-bold px-1 rounded">Architect</span> with 8+ years of experience in <span class="line-through text-slate-400">building software</span> <span class="text-teal-700 font-bold underline decoration-teal-500/30">scaling distributed cloud infrastructure</span>. Specialized in Kubernetes and high-availability systems.
+                                    <span class="absolute -right-4 top-0 bg-white shadow-md border border-teal-100 p-2 rounded-lg text-[11px] w-48 font-medium">
+<span class="text-teal-600 font-bold">AI Suggestion:</span> Use "scaling distributed cloud infrastructure" to match 94% of Senior Architect job descriptions.
+                                    </span>
+</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-slate-100 pb-2">
+<h3 class="font-headline font-extrabold text-sm tracking-widest text-slate-400 uppercase">Experience</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-bold text-slate-900">Lead Infrastructure Engineer</h4>
+<p class="text-xs text-slate-500">CloudPioneer Tech • 2020 – Present</p>
+</div>
+</div>
+<ul class="text-sm space-y-3 list-disc pl-4">
+<li class="leading-relaxed">Led the migration of legacy services to a containerized environment.</li>
+<li class="leading-relaxed bg-amber-50 rounded-md p-1 border-l-2 border-amber-300">
+                                            Managed a team of 5 developers to improve site speed.
+                                            <div class="mt-1 text-[10px] text-amber-700 font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lightbulb</span> 
+                                                Quantify this: "Improved site latency by 45% across 2M+ DAU"
+                                            </div>
+</li>
+<li class="leading-relaxed">Implemented CI/CD pipelines using Jenkins and GitLab.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Stats & Recommendations (4/12) -->
+<div class="col-span-12 xl:col-span-4 space-y-6">
+<!-- Match Score Card -->
+<div class="bg-primary-container rounded-2xl p-6 text-white overflow-hidden relative">
+<div class="absolute top-[-20%] right-[-10%] w-48 h-48 bg-teal-500/10 blur-[64px] rounded-full"></div>
+<h3 class="font-headline text-lg font-bold mb-6">Target Role Match</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-medium text-slate-300">Staff Systems Engineer (Google)</span>
+<span class="text-xs font-bold text-tertiary-fixed">92%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full">
+<div class="bg-teal-400 h-full rounded-full shadow-[0_0_12px_rgba(45,212,191,0.4)]" style="width: 92%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-medium text-slate-300">Cloud Architect (Amazon Web Services)</span>
+<span class="text-xs font-bold text-tertiary-fixed">78%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full">
+<div class="bg-teal-400 h-full rounded-full shadow-[0_0_12px_rgba(45,212,191,0.4)]" style="width: 78%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-medium text-slate-300">Head of Platform (Stripe)</span>
+<span class="text-xs font-bold text-slate-500">64%</span>
+</div>
+<div class="w-full bg-slate-800 h-2 rounded-full">
+<div class="bg-slate-600 h-full rounded-full" style="width: 64%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upskilling Bento Items -->
+<div class="space-y-4">
+<h3 class="font-headline text-sm font-extrabold uppercase tracking-widest text-slate-400 px-1">Critical Skill Gaps</h3>
+<!-- Card 1 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container">architecture</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900">Distributed Consensus (Raft/Paxos)</h4>
+<p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Required for Staff-level roles at Google. Current profile lacks verified implementation of consensus algorithms.</p>
+<div class="mt-3 flex items-center gap-2">
+<span class="bg-surface-container-low text-[10px] font-bold px-2 py-0.5 rounded text-slate-600">Project Rec</span>
+<a class="text-[10px] font-bold text-teal-600 hover:underline" href="#">Build a Key-Value Store →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-indigo-600">verified_user</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900">CKAD Certification</h4>
+<p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Boosts AWS match score by +14%. Certified Kubernetes Application Developer is highly prioritized.</p>
+<div class="mt-3 flex items-center gap-2">
+<span class="bg-indigo-50 text-[10px] font-bold px-2 py-0.5 rounded text-indigo-600">Fast Track</span>
+<a class="text-[10px] font-bold text-teal-600 hover:underline" href="#">6-Week Study Plan →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-amber-600">monitoring</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900">Observability Pipelines</h4>
+<p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Stripe requires specific proficiency in Prometheus/Grafana at scale. Add metrics quantification.</p>
+<div class="mt-3">
+<div class="flex flex-wrap gap-1">
+<span class="text-[9px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full">OpenTelemetry</span>
+<span class="text-[9px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full">SLIs/SLOs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA for personalized coaching -->
+<div class="bg-gradient-to-br from-teal-600 to-teal-800 rounded-2xl p-6 text-white shadow-xl shadow-teal-900/20">
+<h4 class="font-headline font-bold text-sm">Need a human eye?</h4>
+<p class="text-xs text-teal-50/80 mt-2 leading-relaxed">Book a 15-min review with a FAANG engineering manager to polish your narrative.</p>
+<button class="w-full mt-4 bg-white text-teal-800 py-2.5 rounded-xl text-xs font-bold hover:bg-teal-50 transition-colors">Schedule Session</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 w-full py-8 mt-auto border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 gap-4 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-slate-50 font-manrope font-bold text-lg">Precision-Tech Editorial</span>
+<p class="font-inter text-xs leading-relaxed text-slate-500 mt-1">© 2024 Precision-Tech Editorial. AI outputs are probabilistic; verify critical data.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-teal-400 transition-colors font-inter text-xs" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-teal-400 transition-colors font-inter text-xs" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-teal-400 transition-colors font-inter text-xs" href="#">AI Ethics Disclaimer</a>
+<a class="text-slate-500 hover:text-teal-400 transition-colors font-inter text-xs" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

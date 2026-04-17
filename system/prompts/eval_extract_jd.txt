@@ -1,0 +1,44 @@
+You are a structured data extraction engine. Extract structured fields from the job description below.
+
+Return ONLY a single valid JSON object. Do not include markdown fences, explanations, or any text outside the JSON object.
+
+Job Description:
+{jd}
+
+Extract the following fields and return them as a JSON object matching this exact schema:
+
+{{
+  "title": "<job title string>",
+  "company": "<company name string>",
+  "required_skills": ["<skill1>", "<skill2>", "..."],
+  "preferred_skills": ["<skill1>", "<skill2>", "..."],
+  "seniority_level": "<one of: IC3 | IC4 | IC5 | IC6 | manager | director | vp | c-suite>",
+  "comp_range_min": <integer annual USD or null if not stated>,
+  "comp_range_max": <integer annual USD or null if not stated>,
+  "comp_currency": "<ISO 4217 currency code string or null if not stated>",
+  "remote_policy": "<one of: remote | hybrid | onsite>",
+  "location": "<city/region string or null if fully remote with no location>",
+  "language": "<ISO 639-1 two-letter language code of the job description, e.g. en, fr, de>",
+  "region": "<one of: US | EU | UK | CA | APAC | LATAM | MEA | OTHER>",
+  "archetype": "<one of: ai-platform-engineer | staff-software-engineer | technical-product-manager | engineering-manager | ml-engineer | backend-engineer | data-engineer | devops-platform-engineer>",
+  "keywords": ["<keyword1>", "<keyword2>", "..."],
+  "hiring_urgency": "<one of: urgent | normal | slow>"
+}}
+
+Field-by-field instructions:
+- title: The exact job title as stated. Do not normalize or abbreviate.
+- company: The employer's name. Use the parent company name if a subsidiary is listed.
+- required_skills: Skills explicitly stated as required, must-have, or listed under "Requirements" / "Qualifications". Include programming languages, frameworks, tools, and domain knowledge. Aim for 5-15 items.
+- preferred_skills: Skills stated as preferred, nice-to-have, or listed under "Preferred" / "Bonus" / "Plus". If none are stated, return an empty array.
+- seniority_level: Map the role to the closest level. IC3=junior, IC4=mid-level, IC5=senior, IC6=staff/principal. Use "manager" for engineering managers, "director" for directors, "vp" for VPs, "c-suite" for C-level. If ambiguous, choose the best fit.
+- comp_range_min / comp_range_max: Annual base salary integers in the stated currency. Convert hourly rates to annual (multiply by 2080). If a range is stated as a single number, set both min and max to that number. Set to null if no compensation is mentioned.
+- comp_currency: Three-letter ISO 4217 code (e.g. USD, EUR, GBP, CAD). Set to null if compensation is not mentioned.
+- remote_policy: Use "remote" if the role is fully remote, "hybrid" if partially in-office, "onsite" if fully on-site or no remote option is mentioned.
+- location: City and state/country (e.g. "San Francisco, CA" or "London, UK"). Null if fully remote with no location requirement.
+- language: ISO 639-1 code of the language the JD is written in (typically "en").
+- region: Geographic region of the role. Use "US" for United States, "EU" for European Union countries, "UK" for United Kingdom, "CA" for Canada, "APAC" for Asia-Pacific, "LATAM" for Latin America, "MEA" for Middle East and Africa, "OTHER" for anything else.
+- archetype: Choose the single best-matching archetype from the allowed list based on the role's primary responsibilities. Prefer specificity (e.g. "ml-engineer" over "backend-engineer" if the role focuses on ML).
+- keywords: The 15-20 most important technical and domain-specific keywords from the JD. These will be used for resume keyword matching. Include key technologies, methodologies, and domain terms.
+- hiring_urgency: Infer from signals in the JD. Use "urgent" if the posting mentions immediate start, ASAP, or was posted recently with clear urgency signals. Use "slow" if the role is evergreen, pipeline-building, or has long interview processes stated. Use "normal" as the default when signals are absent.
+
+Return ONLY the JSON object. No other text.

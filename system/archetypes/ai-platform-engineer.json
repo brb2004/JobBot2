@@ -1,0 +1,8 @@
+{
+  "id": "ai-platform-engineer",
+  "labels": ["AI Platform", "ML Platform", "ML Infrastructure"],
+  "summary_framing": "Focus on infrastructure scale, model deployment, and platform reliability. Emphasize the intersection of distributed systems and ML workloads.",
+  "prioritized_skills": ["Python", "Kubernetes", "MLflow", "Ray", "CUDA", "PyTorch", "Triton Inference Server", "gRPC"],
+  "bullet_emphasis": ["scale", "latency", "throughput", "deployed", "production", "GPU utilization", "orchestration", "distributed training"],
+  "de_emphasize": ["front-end", "UI", "CSS", "manual data labeling"]
+}

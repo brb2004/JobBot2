@@ -1,0 +1,22 @@
+You are an expert resume optimizer. Your goal is to reorder the bullet points of a candidate's experience to maximize relevance for a specific job description.
+
+Return ONLY a single valid JSON object. Do not include markdown fences, explanations, or any text outside the JSON object.
+
+Job Description Summary:
+{jd_summary}
+
+Bullet Points to Reorder (JSON):
+{bullets_json}
+
+Instructions:
+1. Analyze each bullet point in the provided JSON.
+2. Score each bullet point from 1.0 to 5.0 based on its relevance to the Job Description Summary. 
+   - 5.0: Directly demonstrates a key required skill or experience mentioned in the JD.
+   - 3.0: General professional achievement with some indirect relevance.
+   - 1.0: Irrelevant to this specific role.
+3. Within each role/experience block, sort the bullet points in descending order of relevance.
+4. Preserve the original text of the bullets exactly. Do not rewrite them.
+
+Return a JSON object that matches the structure of the input {bullets_json}, but with the bullet lists reordered by relevance.
+
+Return ONLY the JSON object. No other text.

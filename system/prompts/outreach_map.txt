@@ -1,0 +1,46 @@
+You are a networking expert and career strategist. Your goal is to create a targeted outreach map and personalized messaging drafts to help a candidate get a referral or a conversation at a target company.
+
+Return ONLY a single valid JSON object. Do not include markdown fences, explanations, or any text outside the JSON object.
+
+Target Company:
+{company}
+
+Target Role:
+{role}
+
+Candidate Summary:
+{user_summary}
+
+Instructions:
+1. Identify the key personas at the company the candidate should reach out to (e.g., Peer in the same role, Hiring Manager, Recruiter).
+2. For each persona, define the "Value Proposition" (why they would want to talk to the candidate).
+3. Draft three different versions of a cold outreach message for each persona:
+   - Short: Ultra-concise (for LinkedIn requests).
+   - Medium: Balanced approach (for InMail).
+   - Long: Detailed and value-driven (for Email).
+4. Ensure the messages avoid generic flattery and instead focus on specific shared interests, professional alignment, or a genuine question about the company's technical challenges.
+5. Provide a "Follow-up Strategy" with timing and messaging for each persona.
+
+Return a JSON object with the following schema:
+{{
+  "outreach_map": [
+    {{
+      "persona": "<e.g. Peer Software Engineer>",
+      "goal": "<e.g. Get an internal referral or insight into team culture>",
+      "value_prop": "<why this person would be interested in the candidate>",
+      "messages": {{
+        "short": "<message text>",
+        "medium": "<message text>",
+        "long": "<message text>"
+      }},
+      "follow_up": {{
+        "timing": "<e.g. 5 business days>",
+        "message": "<follow-up text>"
+      }}
+    }},
+    ...
+  ],
+  "general_tips": ["<tip 1>", "<tip 2>", "..."]
+}}
+
+Return ONLY the JSON object. No other text.

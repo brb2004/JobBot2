@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - {{ name }}</title>
+    <style>
+        @page {
+            size: {{ paper_format }};
+            margin: 0.75in;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24pt;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            margin-top: 5px;
+            font-size: 10pt;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #444;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 8px;
+            padding-bottom: 2px;
+        }
+        .summary {
+            font-style: italic;
+            text-align: justify;
+        }
+        .experience-item {
+            margin-bottom: 12px;
+        }
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+        }
+        .company-name {
+            font-size: 11pt;
+            color: #000;
+        }
+        .date-range {
+            font-size: 10pt;
+            color: #666;
+            font-weight: normal;
+        }
+        .job-title {
+            display: block;
+            font-style: italic;
+            font-size: 10.5pt;
+            margin-bottom: 4px;
+        }
+        .bullets {
+            margin: 5px 0 0 20px;
+            padding: 0;
+            list-style-type: disc;
+        }
+        .bullets li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-item {
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 10pt;
+            border: 1px solid #ddd;
+        }
+        .education-item {
+            margin-bottom: 5px;
+        }
+        .project-item {
+            margin-bottom: 10px;
+        }
+        .project-header {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ name }}</h1>
+        <div class="contact-info">
+            {% if contact_info %}
+                {{ contact_info }}
+            {% else %}
+                Professional Resume
+            {% endif %}
+        </div>
+    </div>
+
+    {% if summary %}
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <div class="summary">{{ summary }}</div>
+    </div>
+    {% endif %}
+
+    {% if experience %}
+    <div class="section">
+        <div class="section-title">Experience</div>
+        {% for role in experience %}
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="company-name">{{ role.company }}</span>
+                <span class="date-range">{{ role.start_date }} &mdash; {{ role.end_date }}</span>
+            </div>
+            <span class="job-title">{{ role.title }}</span>
+            <ul class="bullets">
+                {% for bullet in role.bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if skills %}
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <ul class="skills-list">
+            {% for skill in skills %}
+            <li class="skills-item">{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if education %}
+    <div class="section">
+        <div class="section-title">Education</div>
+        {% for edu in education %}
+        <div class="education-item">{{ edu }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if projects %}
+    <div class="section">
+        <div class="section-title">Projects</div>
+        {% for project in projects %}
+        <div class="project-item">
+            <div class="project-header">
+                <span>{{ project.name }}</span>
+                <span class="date-range">{{ project.date }}</span>
+            </div>
+            <ul class="bullets">
+                {% for bullet in project.bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>

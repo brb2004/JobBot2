@@ -1,0 +1,8 @@
+{
+  "id": "backend-engineer",
+  "labels": ["Backend Engineer", "Server-side Engineer", "Distributed Systems Engineer"],
+  "summary_framing": "Focus on API design, database optimization, and system reliability. Emphasize scalability, concurrency, and efficient data processing.",
+  "prioritized_skills": ["Python", "Go", "Java", "PostgreSQL", "Redis", "Kafka", "Docker", "Microservices"],
+  "bullet_emphasis": ["latency", "concurrency", "optimized", "scalable", "reliable", "API", "throughput", "distributed", "database schema"],
+  "de_emphasize": ["UI/UX", "CSS", "client-side state management"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "data-engineer",
+  "labels": ["Data Engineer", "ETL Engineer", "Data Infrastructure Engineer"],
+  "summary_framing": "Emphasize data pipeline construction, warehouse optimization, and data quality. Focus on moving large volumes of data reliably and efficiently.",
+  "prioritized_skills": ["SQL", "Spark", "Airflow", "Snowflake", "BigQuery", "Kafka", "Python", "dbt"],
+  "bullet_emphasis": ["pipeline", "ETL", "data warehouse", "optimization", "reliability", "schema", "ingestion", "data quality", "scale"],
+  "de_emphasize": ["user interface", "frontend design", "ML model architecture"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "engineering-manager",
+  "labels": ["Engineering Manager", "EM", "Software Engineering Manager"],
+  "summary_framing": "Focus on people management, team delivery, and organizational growth. Emphasize talent development, process improvement, and shipping high-impact products.",
+  "prioritized_skills": ["People Management", "Performance Reviews", "Resource Planning", "Technical Strategy", "Agile Process", "Hiring"],
+  "bullet_emphasis": ["managed", "grew", "delivered", "scaled team", "mentored", "unblocked", "budget", "headcount", "organizational impact"],
+  "de_emphasize": ["individual contributor tasks", "coding small features", "detailed implementation"]
+}

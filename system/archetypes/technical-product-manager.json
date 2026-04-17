@@ -1,0 +1,8 @@
+{
+  "id": "technical-product-manager",
+  "labels": ["Technical Product Manager", "TPM", "Product Manager (Technical)"],
+  "summary_framing": "Emphasize the bridge between business requirements and technical execution. Focus on roadmap definition, API specifications, and engineering trade-offs.",
+  "prioritized_skills": ["Product Roadmap", "PRDs", "Agile/Scrum", "SQL", "API Design", "Stakeholder Management", "Market Analysis"],
+  "bullet_emphasis": ["shipped", "defined", "validated", "metrics", "KPIs", "roadmap", "requirements", "user growth", "trade-off"],
+  "de_emphasize": ["low-level coding", "implementation details", "manual testing"]
+}

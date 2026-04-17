@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Precision-Tech Editorial | Agentic AI Job Search</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#111c2d",
+                    "outline": "#76777d",
+                    "on-primary-fixed": "#111c2d",
+                    "primary-fixed-dim": "#bcc7de",
+                    "primary": "#000000",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "surface-dim": "#d8dadc",
+                    "on-tertiary-fixed-variant": "#005049",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary-fixed-dim": "#6bd8cb",
+                    "secondary": "#515f74",
+                    "on-primary-container": "#79849a",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#d5e3fd",
+                    "inverse-on-surface": "#eff1f3",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-background": "#191c1e",
+                    "secondary-container": "#d5e3fd",
+                    "tertiary-container": "#00201d",
+                    "surface-tint": "#545f73",
+                    "on-secondary-container": "#57657b",
+                    "inverse-surface": "#2d3133",
+                    "tertiary": "#000000",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c6c6cd",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#45464d",
+                    "on-tertiary-container": "#0c9488",
+                    "inverse-primary": "#bcc7de",
+                    "on-surface": "#191c1e",
+                    "primary-fixed": "#d8e3fb",
+                    "on-primary-fixed-variant": "#3c475a",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "tertiary-fixed": "#89f5e7",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "surface": "#f7f9fb",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#00201d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .ink-gradient {
+            background: linear-gradient(135deg, #000000 0%, #111c2d 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar - Fixed with Glassmorphism -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-md shadow-sm shadow-slate-200/50">
+<div class="flex justify-between items-center h-16 px-6 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-slate-900">Precision-Tech Editorial</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-900 border-b-2 border-teal-500 pb-1" href="#">Discover</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Optimization</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Upskilling</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-500 hover:text-slate-700 transition-colors" href="#">Applications</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100/50 transition-all rounded-full">
+<span class="material-symbols-outlined text-on-surface">notifications</span>
+</button>
+<button class="p-2 hover:bg-slate-100/50 transition-all rounded-full">
+<span class="material-symbols-outlined text-on-surface">settings</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="User profile avatar" data-alt="Close-up professional portrait of a smiling businessman in a light blue shirt against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOz6ns_aiWn-fTDYqswuApei34_qZsBsQWuXxlkP2KDJUnWvOPR5lBQbR4aDb9mToj-fXphZnf4fPQhZTfT7mU9502zhWiAyT5_aTVAk5aUMaRcQWS_R8-jcCX5g3qI90poxd8IeQSXA8RNxvlcunB9mo1wa44LW9xvLShLdVl-c_csse0S-EvaVsoyCgSARwf9arKCBsCVixvVD9lyI9U0Ll30zZtF4t82Iz4-z2pkJxGoL4QC0ERmiYKEg87sikcxVUEADeLAsw"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-6 md:px-12 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container/10 border border-on-tertiary-container/20 mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-on-tertiary-container text-xs font-bold tracking-wider font-headline uppercase">Agentic AI Engine v2.4</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-6">
+                        Precision Engineering <br/> For Your <span class="text-on-tertiary-container">Career.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                        The architectural ledger of job search. We don't just find listings; we architect your professional narrative using probabilistic AI models optimized for ATS performance.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="ink-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-sm tracking-tight shadow-xl shadow-primary-container/20 hover:scale-[0.98] transition-transform">
+                            Initialize Engine
+                        </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-headline font-bold text-sm tracking-tight hover:bg-surface-container-highest transition-colors">
+                            Explore Workflows
+                        </button>
+</div>
+<p class="mt-8 text-xs text-on-surface-variant/60 font-medium">
+<span class="font-bold text-error">CRITICAL NOTICE:</span> AI outputs are probabilistic; verify critical data before submission.
+                    </p>
+</div>
+<div class="relative hidden md:block">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-tertiary-fixed-dim/20 blur-[100px] rounded-full"></div>
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-2xl shadow-slate-200/50 border border-outline-variant/10 relative overflow-hidden">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<p class="text-xs font-bold text-primary-container uppercase tracking-widest">Match Score Analysis</p>
+<p class="text-lg font-headline font-extrabold">Senior AI Architect</p>
+</div>
+</div>
+<div class="px-4 py-2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-xl">98%</div>
+</div>
+<div class="space-y-4">
+<div class="h-2 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full w-[98%] bg-on-tertiary-container"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-surface-container-low">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest mb-1">ATS Sync</p>
+<p class="text-sm font-bold text-primary">Optimized</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest mb-1">Keywords</p>
+<p class="text-sm font-bold text-primary">Found 14/15</p>
+</div>
+</div>
+<div class="p-4 rounded-xl border border-dashed border-outline-variant">
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest mb-2">AI Optimization Suggestion</p>
+<p class="text-xs italic text-on-surface-variant">"Rephrase 'Distributed Systems' to 'Large Scale Agentic Architectures' to increase relevance by 12%."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Proposition Bento Grid -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter text-primary-container mb-4">Precision Workflow</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Our agentic engine automates the friction of job seeking through technical rigor and data-driven optimization.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10 shadow-sm">
+<div class="flex-1">
+<h3 class="font-headline text-2xl font-extrabold mb-4">Resume Architecting</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Upload once. Our AI deconstructs your experience into a modular knowledge graph, rebuilding it specifically for every target role's ATS requirements.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    Semantic Keyword Extraction
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    Formatting Protocol Verification
+                                </li>
+</ul>
+</div>
+<div class="w-full md:w-64 aspect-square bg-surface-container-low rounded-2xl overflow-hidden">
+<img alt="Resume optimization" data-alt="Minimalist overhead shot of a clean workspace with a laptop showing code and a printed resume on a white desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2uZaBX_VVVKmbtnG6cNsP6xS5JIMJFMepCMB5Ug06FaKsAjPtaXXt4iNXVKPPuq2K8Uyl2Ttq8_qhq82YT03wFn_9c0CEIP_bCUIQaIPNYMf08rseO-TtoRLyafXdaTwdD74Ka4Loyk15v0w-NLCw69PmbPNg-ZR_BbsCVUrf6Dkn3ItZIUskeutkdqnMEM3Lt9UeRXxvxtCeBEW_h-3cl6e0eriZBVcL1EpBuYNOha6ZOWtfcPe3OEVhgupy4iDbhD63DFvRWME"/>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary-container p-10 rounded-[2rem] text-on-primary shadow-xl">
+<div class="h-12 w-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-8">
+<span class="material-symbols-outlined">send</span>
+</div>
+<h3 class="font-headline text-2xl font-extrabold mb-4">Auto-Applications</h3>
+<p class="text-on-primary-container text-sm leading-relaxed mb-6">Let our agents handle the heavy lifting. We submit your optimized profile to compatible listings while you focus on interviews.</p>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-[10px] uppercase font-bold tracking-widest text-on-primary-container">
+<span>Weekly Velocity</span>
+<span>42 Applications</span>
+</div>
+<div class="h-1 w-full bg-slate-800 rounded-full">
+<div class="h-full w-4/5 bg-tertiary-fixed"></div>
+</div>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 shadow-sm flex flex-col justify-between">
+<div>
+<div class="h-12 w-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container mb-8">
+<span class="material-symbols-outlined">distance</span>
+</div>
+<h3 class="font-headline text-2xl font-extrabold mb-4">Map-Based Curation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Visualize your career growth. Filter by tech hubs, salary density, and commute optimization scores.</p>
+</div>
+<div class="mt-8 rounded-xl overflow-hidden h-32 grayscale border border-outline-variant/20">
+<img alt="Tech hub map" data-alt="Monochrome desaturated satellite map view of a dense urban technology hub with soft teal data point highlights" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHxM-0l8V0qto-CmmJZ9dPQ01KyLrFYT-AsK2cRaaJ5VPp-1WBXpKxcaIkCZI7JchmkWhaOXLJBNcNF35DnzBbVgEH0ac5g8sxXaFQQBaEBh1g6Bb3MgrX2VS6UzVCxuqfXp0tHT5MzTuP6mdOHIQMqwbYhBbNvDqk7XVt6adiPtkixpldmefvB4ZKJ52Uo3vfro9_xkHhcy5w_X35GQpXttVLU9X9xRSAdoSvMj9XIWjotNv9iUsida8DmcgM0PamDNNFY4eudmA"/>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/10 shadow-sm flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 order-2 md:order-1">
+<h3 class="font-headline text-2xl font-extrabold mb-4">ATS Optimization Protocol</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Our engine simulates common Applicant Tracking Systems to ensure your resume never hits a 'disqualify' filter due to formatting or semantics.</p>
+<div class="flex gap-4">
+<div class="px-4 py-2 bg-tertiary-container/5 rounded-lg border border-on-tertiary-container/10">
+<span class="text-on-tertiary-container text-xs font-bold">PDF Clean</span>
+</div>
+<div class="px-4 py-2 bg-tertiary-container/5 rounded-lg border border-on-tertiary-container/10">
+<span class="text-on-tertiary-container text-xs font-bold">Standard UTF-8</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-72 order-1 md:order-2">
+<img alt="Data visualization" data-alt="High-contrast black and white photography of a computer screen showing complex data analytics charts and financial graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoFp1auBGRpUnk82U4YzdfcCTOgV9BfJENsUFE2eKxA6Hus0JbeUJeEFXCgoLjNYbK0cmA4wmAZmjDinz3uo3FxdinL1AcLoJwHEuMDw7Uwtk1HH7Vk_Q7kOabCuEsJ-EXafeiGU-MrnAWSIDO5VOFECRq3FNyuIBzWO0kTJpZZJqPMQUh6jAdCe9GF1fIMsNzfkAgtLwyyY_YnSegF0lJDJGSdD-T_gjU2uYBLgsPinTZBYmC-KXg0VfhALeZ4PDgKsXRVrxwAn0"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Login / Register Section -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-4xl font-extrabold tracking-tighter text-primary-container mb-6">Initialize Your Professional Node.</h2>
+<p class="text-on-surface-variant mb-8 text-lg">Join the Precision-Tech ecosystem to start your automated journey. One account, infinite career possibilities.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="p-2 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined">security</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Enterprise Privacy</h4>
+<p class="text-xs text-on-surface-variant">Your data is encrypted and never sold to third-party scrapers.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-2 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined">sync_alt</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Seamless Integration</h4>
+<p class="text-xs text-on-surface-variant">Sync with LinkedIn, GitHub, and major job boards instantly.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-outline-variant/10">
+<div class="flex gap-4 mb-8">
+<button class="text-sm font-headline font-bold text-primary border-b-2 border-teal-500 pb-1">Login</button>
+<button class="text-sm font-headline font-bold text-on-surface-variant hover:text-primary transition-colors">Register</button>
+</div>
+<form class="space-y-6">
+<div>
+<label class="block text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-2 ml-1">Work Email</label>
+<input class="w-full px-5 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-on-tertiary-container/30 text-sm" placeholder="name@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-2 ml-1">Credentials</label>
+<input class="w-full px-5 py-4 rounded-xl bg-surface-container-low border-none focus:ring-2 focus:ring-on-tertiary-container/30 text-sm" placeholder="••••••••" type="password"/>
+</div>
+<button class="w-full ink-gradient text-on-primary py-4 rounded-xl font-headline font-bold text-sm tracking-tight shadow-lg shadow-primary-container/10" type="submit">
+                            Access Engine
+                        </button>
+<div class="relative py-4">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/30"></div></div>
+<div class="relative flex justify-center text-xs uppercase font-bold tracking-widest bg-surface-container-lowest px-4 text-on-surface-variant/40">Or Connect With</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
+<img alt="Google Logo" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKDsKZLZXHLZRGzWsw5b9uPqZ8g2Xc-Ims57GrPj54MRJbY2cL4lfI_SnFR1i824Wbzp1UldI25jxJWLXlaSUmjbncC51_zk9OZ-zfcLk8bEPOGgHBSl-9woctaDWENA58BPbsuKNshgqblD7Kz1roGCiQkVHnmnrQyudy7rlxDIZ_8msKU-qHwzP7f4H13-6XjUsabinFbDQ8TO6OyF2rHqI3MO2qIeahf6faPaIl64xKWqOlNXgkMYT5VIPo6tJvlg4IpNJPp-0"/>
+<span class="text-xs font-bold">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors">
+<img alt="LinkedIn Logo" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxvyPkW7iIRT4NJg02HIDSHdf_ZsALbumesd-Ii4Fbeb64E_K00O4qZKsI82nWq14k8SM01F8vkeL2bu1UM95Qm5KPzpemCUCfxGRLVvTxuQFDcK_YSNV9XpzQngSrWK3rlzjSjtD0_VxyncoL372q7I_mnZal1E3mpps2nZGrvUvqG4HTl5gbdxRUPF8NgUL5t_CMx7CF_R9Udzd3ngtnFEYtCw6dVeIw9cLHXAW6SmDbuDXTdNVJdrk12-SdE7Dp5GJauS18KgQ"/>
+<span class="text-xs font-bold">LinkedIn</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 w-full py-8 mt-auto border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 gap-4">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-slate-50 font-manrope font-bold">Precision-Tech Editorial</span>
+<p class="font-inter text-xs leading-relaxed text-slate-500 max-w-sm text-center md:text-left">
+                    © 2024 Precision-Tech Editorial. AI outputs are probabilistic; verify critical data.
+                </p>
+</div>
+<nav class="flex gap-6">
+<a class="font-inter text-xs text-slate-500 hover:text-teal-400 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs text-slate-500 hover:text-teal-400 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-xs text-slate-500 hover:text-teal-400 transition-colors" href="#">AI Ethics Disclaimer</a>
+<a class="font-inter text-xs text-slate-500 hover:text-teal-400 transition-colors" href="#">Support</a>
+</nav>
+</div>
+</footer>
+</body></html>

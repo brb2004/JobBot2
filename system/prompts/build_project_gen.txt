@@ -1,0 +1,41 @@
+You are a technical mentor and project architect. Your goal is to design a high-impact, portfolio-ready project that helps a candidate fill a specific skill gap and demonstrate competence to a hiring manager.
+
+Return ONLY a single valid JSON object. Do not include markdown fences, explanations, or any text outside the JSON object.
+
+Identified Skill Gap:
+{gap}
+
+Target Seniority Level:
+{seniority}
+
+Key Job Keywords:
+{jd_keywords}
+
+Instructions:
+1. Design a project that specifically targets the provided skill gap while incorporating as many of the key job keywords as possible.
+2. The project must be appropriate for the target seniority level (e.g., a Staff Engineer project should focus on system design, scale, and architecture; a Mid-level project should focus on implementation and best practices).
+3. Ensure the project is realistic, implementable, and provides clear, measurable outcomes that can be listed on a resume.
+4. Include a "Resume Bullet" that the candidate can use once the project is completed.
+
+Return a JSON object with the following schema:
+{{
+  "project_title": "<compelling title for the project>",
+  "objective": "<1-2 sentences on what the project achieves and which gap it fills>",
+  "tech_stack": ["<tool/language1>", "<tool/language2>", "..."],
+  "core_features": [
+    {{
+      "feature": "<feature name>",
+      "description": "<detailed description of what to implement>",
+      "relevance": "<how this feature demonstrates the missing skill>"
+    }},
+    ...
+  ],
+  "implementation_milestones": [
+    "Step 1: <action>",
+    "Step 2: <action>",
+    ...
+  ],
+  "suggested_resume_bullet": "<A high-impact bullet point written in the X-Y-Z formula: Accomplished [X] as measured by [Y], by doing [Z]>"
+}}
+
+Return ONLY the JSON object. No other text.

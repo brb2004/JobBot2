@@ -1,0 +1,8 @@
+{
+  "id": "devops-platform-engineer",
+  "labels": ["DevOps Engineer", "Platform Engineer", "SRE"],
+  "summary_framing": "Focus on automation, infrastructure as code (IaC), and system observability. Emphasize reducing toil and increasing deployment velocity.",
+  "prioritized_skills": ["Terraform", "Kubernetes", "AWS/GCP/Azure", "CI/CD", "Prometheus", "Grafana", "Ansible", "Bash"],
+  "bullet_emphasis": ["automation", "provisioned", "observability", "uptime", "CI/CD", "IaC", "deployment", "monitoring", "scaling"],
+  "de_emphasize": ["business logic implementation", "feature development", "product design"]
+}

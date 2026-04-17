@@ -1,0 +1,8 @@
+{
+  "id": "staff-software-engineer",
+  "labels": ["Staff Engineer", "Principal Engineer", "L6+ Software Engineer"],
+  "summary_framing": "Highlight cross-functional leadership, architectural ownership, and systemic impact. Focus on solving complex, ambiguous problems that span multiple teams.",
+  "prioritized_skills": ["System Design", "Architecture", "Technical Leadership", "Cross-team Collaboration", "Performance Optimization", "API Design"],
+  "bullet_emphasis": ["led", "architected", "defined", "standardized", "mentored", "reduced technical debt", "cross-functional", "long-term strategy"],
+  "de_emphasize": ["small feature tasks", "ticket-level implementation", "basic bug fixes"]
+}
