@@ -1,13 +1,13 @@
 from typing import Callable
 
-import httpx
+from curl_cffi import requests as curl_requests
 from bs4 import BeautifulSoup
 from engine.llm_client import LLMClient
 
 
 def _fetch_jd(url: str) -> str:
     """Fetch the page at *url* and return plain text (HTML stripped)."""
-    response = httpx.get(url, follow_redirects=True, timeout=30)
+    response = curl_requests.get(url, impersonate="chrome", timeout=30)
     response.raise_for_status()
 
     content_type = response.headers.get("content-type", "")

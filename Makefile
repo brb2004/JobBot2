@@ -2,12 +2,18 @@
 
 setup:
 	cd client && npm install
+	python3 -m venv .venv
+	.venv/bin/pip install --upgrade pip
+	.venv/bin/pip install -r requirements.txt
 
 infra:
 	docker compose up -d
 
+migrate:
+	.venv/bin/alembic upgrade base
+
 server:
-	uvicorn server.main:app --reload --port 3001
+	.venv/bin/uvicorn server.main:app --reload --port 3001
 
 worker:
 	celery -A server.queue.celery_app worker --loglevel=info

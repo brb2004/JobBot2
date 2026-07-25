@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: jobbot
       POSTGRES_DB: jobbot
     ports:
-      - "5432:5432"
+      - "5532:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:

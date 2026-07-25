@@ -1,0 +1,39 @@
+# Core web API
+fastapi
+uvicorn[standard]
+
+# Configuration and validation
+pydantic
+pydantic-settings
+python-dotenv
+email-validator
+
+# Database and ORM
+sqlalchemy
+asyncpg
+psycopg2-binary
+alembic
+
+# Auth and session storage
+PyJWT
+bcrypt
+redis
+
+# Async / streaming support
+sse-starlette
+
+# Background jobs
+celery
+
+# HTTP and scraping
+httpx
+curl-cffi
+beautifulsoup4
+requests
+
+# LLM / templating
+anthropic
+jinja2
+
+# Testing
+pytest
